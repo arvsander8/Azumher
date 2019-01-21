@@ -16,6 +16,16 @@ class SideBar extends Component{
                 {list && list.map(
                     (list, key) => <li key={key}><Link to={list.url}>{list.title}</Link> </li>)}
                 </ul>
+                <div>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                </div>
             </div>
         );
     }

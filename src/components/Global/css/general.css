@@ -1,3 +1,9 @@
 .Contents{
   display: flex;
 }
+
+.add{
+  /*position: absolute;*/
+
+ float: right;
+}
