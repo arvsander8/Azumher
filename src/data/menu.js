@@ -1,16 +1,17 @@
 export default[
     {
-        title: 'Home',
-        url: '/'
+        title: 'save',
+        url: '/',
+        img: '../components/Global/images/save.png'
     },
     {
-        title: 'Blog',
+        title: 'open',
         url: '/blog'
     },{
-        title: 'About us',
+        title: 'print',
         url: '/about'
     },{
-        title: 'Contact Us',
+        title: 'exit',
         url: '/contact'
     },
 ];

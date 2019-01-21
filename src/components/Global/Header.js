@@ -1,15 +1,15 @@
 //Dependencies
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import {Link} from 'react-router-dom';
 
 //Assets
-import logo from './images/logo.svg';
 import './css/Header.css';
 
 class Header extends Component {
-  static PropTypes = {
-      title: PropTypes.string.isRequired,
-      items: PropTypes.array.isRequired
+  static propTypes = {
+      title: PropTypes.string,
+      items: PropTypes.array.isRequired,
   };
   render() {
     const {title, items} = this.props;
@@ -17,10 +17,9 @@ class Header extends Component {
     return (
       <div className="Headere">
         <div className="Logo">
-          <img src={logo} alt="logo" />
-          <h2>{title}</h2>
           <ul className="Menu">
-            {items && items.map((items, key) => <li key={key}>{items.title} </li>)}
+            {items && items.map(
+              (item, key) => <li key={key}><Link to={item.url}>{item.title}</Link> </li>)}
           </ul>
         </div>
       </div>
